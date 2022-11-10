@@ -7,15 +7,15 @@ driver.maximize_window()
 location = "https://demoqa.com/alerts"
 driver.get(location)
 
-#Click on the "Alert" button to generate the Simple Alert
+# Click on the "Alert" button to generate the Simple Alert
 clickMeButton = driver.find_element(By.ID, 'alertButton')
 clickMeButton.click()
-time.sleep(5)
+time.sleep(2)
 
-#Switch the control to the Alert window
-a = driver.switch_to.alert
+# Switch the control to the Alert window
+alertBox = driver.switch_to.alert
 # accept the alert
-a.accept()
+alertBox.accept()
 
-#close the driver
-driver.close
+# close the driver
+driver.close()
