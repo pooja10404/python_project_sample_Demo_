@@ -10,7 +10,7 @@ driver.get(location)
 # Click on the "Alert" button to generate the Simple Alert
 clickMeButton = driver.find_element(By.ID, 'alertButton')
 clickMeButton.click()
-time.sleep(2)
+time.sleep(1)
 
 # Switch the control to the Alert window
 alertBox = driver.switch_to.alert
