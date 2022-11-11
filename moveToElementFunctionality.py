@@ -1,11 +1,8 @@
 # import webdriver
 import time
-
 from selenium import webdriver
-
 # import Action chains
 from selenium.webdriver.common.action_chains import ActionChains
-
 # create webdriver object
 from selenium.webdriver.common.by import By
 
@@ -16,7 +13,6 @@ driver.maximize_window()
 driver.get("https://www.geeksforgeeks.org/")
 
 # get element
-
 element = driver.find_element(By.LINK_TEXT, 'Courses')
 
 # create action chain object
