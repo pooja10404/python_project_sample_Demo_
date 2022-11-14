@@ -13,11 +13,11 @@ driver.maximize_window()
 # Web page url
 driver.get("https://demo.guru99.com/test/newtours/register.php")
 
-# Find id of option
+# Find Xpath of element
 element = driver.find_element(By.XPATH, "//select[@name='country']")
 drop = Select(element)
 
-# Select by index
+# Select by Value
 drop.select_by_value("ANGUILLA")
 
 driver.close()

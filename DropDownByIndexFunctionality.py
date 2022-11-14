@@ -10,10 +10,9 @@ from selenium.webdriver.common.by import By
 # Using chrome driver
 driver = webdriver.Chrome()
 driver.maximize_window()
-# Web page url
 driver.get("https://demo.guru99.com/test/newtours/register.php")
 
-# Find id of option
+# Find Xpath of element
 element = driver.find_element(By.XPATH, "//select[@name='country']")
 drop = Select(element)
 

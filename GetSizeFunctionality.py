@@ -12,5 +12,5 @@ driver.get("https://www.geeksforgeeks.org/")
 # get element
 element = driver.find_element(By.CSS_SELECTOR, "input#gcse-search-input")
 
-# get size
+# get size od element
 print(element.size)

@@ -8,13 +8,13 @@ driver = webdriver.Chrome()
 # maximize window
 driver.maximize_window()
 driver.get("https://www.geeksforgeeks.org/")
-# get element
+# get element by xpath
 element = driver.find_element(By.XPATH, "(//span[contains(text(),'Courses')]) [1]")
 
 # create action chain object
 action = ActionChains(driver)
 
-# click the item
+# click the Courses Link
 action.click(element)
 
 # perform the operation

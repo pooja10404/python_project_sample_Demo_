@@ -10,12 +10,11 @@ driver.maximize_window()
 driver.get("https://www.geeksforgeeks.org/")
 # get element
 element = driver.find_element(By.XPATH, "(//span[contains(text(),'Courses')]) [1]")
-
 # create action chain object
 action = ActionChains(driver)
-# click the item
+# click the course link
 action.click(element)
-# release the item
+# release the course link
 action.release(element)
 # perform the operation
 action.perform()
