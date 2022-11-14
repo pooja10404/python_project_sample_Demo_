@@ -5,7 +5,7 @@ print("employee data are:")
 print("name is %s,ID :%d,Country is %s"%(employee[0],employee[1],employee[2]))
 print("department are %s,dep:%d,country:%s"%(department[0],department[1],department[2]))
 
-
+#demo list for index functionality
 listcollect=[1,2,3,4,5,6]
 print(listcollect[0])
 print(listcollect[1])
