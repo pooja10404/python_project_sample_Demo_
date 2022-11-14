@@ -13,6 +13,8 @@ password = driver.find_element(By.NAME, "password")
 login = driver.find_element(By.XPATH, "//button[@type='submit']")
 username.send_keys("Admin")
 password.send_keys("admin123")
+
 login.click()
+
 time.sleep(2)
 driver.close()
